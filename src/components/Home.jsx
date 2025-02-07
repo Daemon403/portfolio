@@ -7,7 +7,13 @@ const Home = () => {
         <p>
           Hi, I'm <span className='text-[#FFD700]'>403</span>
         </p>
-
+        <h1 className='text-4xl font-bold sm:text-7xl'>I'm a Software Developer</h1>
+        <h2 className='text-xl mt-4'>I build things for the web</h2>
+        <div>
+        <button className='bg-[#FFD700] text-black px-4 py-2 mt-4 flex items-center justify-center rounded-md hover:bg-[#FFD700] hover:text-pink-900'>
+          Get In Touch <HiArrowNarrowRight className='ml-2'/>
+        </button>
+        </div>
       </div>
         
     </div>
