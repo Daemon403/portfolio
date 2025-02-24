@@ -11,8 +11,30 @@ const Skills = () => {
                     Skills
                     </p>
                     </div>
+                    
                 </div>
+                <div className="grid grid-cols-5 md:grid-cols-4 gap-10">
+            {[
+              { name: 'React', level: '95%' },
+              { name: 'Node.js', level: '90%' },
+              { name: 'TypeScript', level: '85%' },
+              { name: 'Python', level: '80%' },
+              { name: 'AWS', level: '75%' },
+              { name: 'Docker', level: '85%' }
+            ].map((skill) => (
+              <div key={skill.name} className="bg-yellow-400 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                <p className="font-semibold text-gray-800 mb-2">{skill.name}</p>
+                <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div 
+                    className="bg-gray-400 h-2 rounded-full transition-all duration-500"
+                    style={{ width: skill.level }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
             </div>
+
         </div>
       
     </div>
