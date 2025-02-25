@@ -13,16 +13,16 @@ const Projects = () => {
                         
                     </div>
                     <div className="grid grid-cols-5 md:grid-cols-4 gap-10">
-                {[
-                { name: 'Portfolio', description: 'Portfolio website built using React and Tailwind CSS', link: 'github.com/daemon403/portfolio-react-app' }
-                ].map((project) => (
-                    <div key={project.name} className="bg-yellow-400 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
-                        <p className="font-semibold text-gray-800 mb-2">{project.name}</p>
-                        <p className="text-gray-800 mb-2">{project.description}</p>
-                        <a href={project.link} className="text-blue-800">View on Github</a>
+                    {[
+                    { name: 'Portfolio', description: 'Portfolio website built using React and Tailwind CSS', link: 'github.com/daemon403/portfolio-react-app' }
+                    ].map((project) => (
+                        <div key={project.name} className="bg-yellow-400 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                            <p className="font-semibold text-gray-800 mb-2">{project.name}</p>
+                            <p className="text-gray-800 mb-2">{project.description}</p>
+                            <a href={project.link} className="text-blue-800">View on Github</a>
+                        </div>
+                    ))}
                     </div>
-                ))}
-                </div>
                 </div>
             </div>
         </div>
