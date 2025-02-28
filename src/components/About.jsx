@@ -1,42 +1,32 @@
-import React from 'react'
+import React from 'react';
+import { User, Globe, Award } from 'lucide-react';
+import SectionTitle from './SectionTitle';
 
-const About = () => {
+export default function About() {
   return (
-    <div name='about' className = 'w-full h-screen bg-[#060312] text-gray-400'>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[90%] w-full grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-yellow-400'>
-              About Me
-            </p>
-            </div>
-            
-            </div>
-            <div className='max-w-[90%] w-full grid grid-cols-2 gap-8'>
-              <div className='sm:text-right text-4xl font-bold inline border-b-4 border-yellow-400'>
-                <p>Hi, I am Cicada403. I am happy to meet you. Get to know more about me.</p>
-              </div>
-  
-      
-          <div className='sm:text-left'>
-            <p className='text-lg mt-4'>
-            I am a passionate tech enthusiast with a deep curiosity 
-            for various aspects of technology. From data engineering 
-            and machine learning to backend development and cloud architecture, 
-            I enjoy exploring and building innovative solutions. Currently, I’m 
-            focused on developing the backend for my edtech startup using Node.js 
-            and JavaScript, while leveraging Google Cloud for database 
-            architecture. I thrive on solving complex problems, optimizing 
-            systems, and staying up-to-date with the latest advancements in tech.
-            </p>
-          </div>
-        
+    <section>
+      <SectionTitle icon={<User />} title="About Me" />
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-gray-800 rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow border border-gray-700">
+          <h3 className="text-xl font-semibold mb-4 flex items-center">
+            <Globe className="mr-2 text-yellow-400" /> Background
+          </h3>
+          <p className="text-gray-300 leading-relaxed">
+            I'm a passionate full-stack developer with 5 years of experience building web applications.
+            I specialize in React, Node.js, and modern web technologies.
+          </p>
         </div>
-
+        <div className="bg-gray-800 rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow border border-gray-700">
+          <h3 className="text-xl font-semibold mb-4 flex items-center">
+            <Award className="mr-2 text-yellow-400" /> Achievements
+          </h3>
+          <ul className="text-gray-300 space-y-2">
+            <li>• Led development of 3 major enterprise applications</li>
+            <li>• Open source contributor to popular React libraries</li>
+            <li>• Speaker at tech conferences</li>
+          </ul>
+        </div>
       </div>
-      
-    </div>
-  )
+    </section>
+  );
 }
-
-export default About
