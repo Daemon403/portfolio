@@ -4,9 +4,11 @@ import SectionTitle from './SectionTitle';
 
 export default function About() {
   return (
-    <section className='h-screen bg-[#060312] text-white W-full flex flex-col justify-center items-center>
+    <section className='h-screen bg-[#060312] text-gray-400 W-full flex flex-col justify-center items-center'>
+      <div className="w-full max-w-[900px] mb-8">
       <SectionTitle icon={<User />} title="About Me" />
-      <div className="grid md:grid-cols-2 gap-8">
+      </div>
+      <div className="max-w-[900px] w-full flex flex-col grid md:grid-cols-2 gap-8">
         <div className="bg-gray-800 rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow border border-gray-700">
           <h3 className="text-xl font-semibold mb-4 flex items-center">
             <Globe className="mr-2 text-yellow-400" /> Background

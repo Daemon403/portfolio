@@ -29,15 +29,15 @@ const projects = [
 export default function Projects() {
   return (
     <section name="projects" className="w-full min-h-screen bg-[#060312] text-gray-400 flex justify-center items-center z-10">
-      <div className="max-w-[90%] w-full h-full flex flex-col justify-center items-center">
+      <div className="max-w-[900px] w-full h-full flex flex-col justify-center items-center">
         
         {/* Title Section */}
-        <div className="w-full max-w-[90%]">
+        <div className="w-full max-w-[900px]">
           <SectionTitle icon={<Briefcase />} title="Projects" />
         </div>
 
         {/* Projects Grid */}
-        <div className="w-full max-w-[90%] grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="w-full max-w-[900px] grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div 
               key={project.title} 
