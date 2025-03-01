@@ -9,8 +9,8 @@ const Projects = () => {
               <h3 className="text-2xl font-bold mb-4">Let's work together!</h3>
               <p className="text-blue-200 mb-6">Open for freelance opportunities and collaborations</p>
               <div className="flex justify-center space-x-6">
-                <a href="#" className="hover:text-blue-300 transition-colors"><FaGithub size={24} /></a>
-                <a href="#" className="hover:text-blue-300 transition-colors"><FaLinkedin size={24} /></a>
+                <a href="https://github.com/Daemon403" className="hover:text-blue-300 transition-colors"><FaGithub size={24} /></a>
+                <a href="https://www.linkedin.com/in/nicholasmutsaka2025/" className="hover:text-blue-300 transition-colors"><FaLinkedin size={24} /></a>
                 <a href="mailto:nicholasmutsaka@gmail.com" className="hover:text-blue-300 transition-colors"><SiGmail size={24} /></a>
               </div>
             </div>
