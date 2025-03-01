@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle';
 
 export default function About() {
   return (
-    <section>
+    <section className='h-screen bg-[#060312] text-white W-full flex flex-col justify-center items-center>
       <SectionTitle icon={<User />} title="About Me" />
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-gray-800 rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow border border-gray-700">
