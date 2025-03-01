@@ -29,7 +29,7 @@ const projects = [
 export default function Projects() {
   return (
     <section name="projects" className="w-full min-h-screen bg-[#060312] text-gray-400 flex justify-center items-center z-10">
-      <div className="max-w-[900px] w-full h-full flex flex-col justify-center items-center">
+      <div className="max-w-[900px] w-full flex flex-col justify-center items-center">
         
         {/* Title Section */}
         <div className="w-full max-w-[900px]">
