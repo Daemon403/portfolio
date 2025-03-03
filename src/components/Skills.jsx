@@ -15,10 +15,10 @@ const skills = [
 export default function Skills() {
   return (
     <section name="skills" className="w-full h-screen bg-[#060312] text-gray-400 flex justify-center items-center">
-      <div className="max-w-[90%] w-full h-full flex flex-col justify-center items-center">
+      <div className="max-w-[900px] w-full h-full flex flex-col justify-center items-center">
         
         {/* Title Section */}
-        <div className="w-full max-w-[900px]">
+        <div className="w-full max-w-[900px] mb-8">
           <SectionTitle icon={<Code2 />} title="Skills" />
         </div>
 
