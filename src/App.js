@@ -18,6 +18,7 @@ export default function App() {
       <Skills />
       <Projects />
       <Education />
+      <Interests />
       <Contact />
       <Footer />  
     </div>

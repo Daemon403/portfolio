@@ -28,55 +28,39 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section name="projects" className="w-full min-h-screen bg-[#060312] text-gray-400 flex justify-center items-center z-10">
+    <section id="projects" className="w-full bg-[#060312] text-gray-400 flex justify-center items-center py-20">
       <div className="max-w-[900px] w-full flex flex-col justify-center items-center">
         
         {/* Title Section */}
-        <div className="w-full max-w-[900px]">
+        <div className="w-full max-w-[900px] mb-8">
           <SectionTitle icon={<Briefcase />} title="Projects" />
         </div>
 
         {/* Projects Grid */}
-        <div className="w-full max-w-[900px] grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {projects.map((project) => (
             <div 
               key={project.title} 
-              className="group bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 relative border border-gray-700"
+              className="bg-gray-800 rounded-xl overflow-hidden shadow-md transition-all hover:shadow-lg flex flex-col items-center p-6"
             >
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1 bg-yellow-900/30 text-yellow-400 rounded-full text-sm border border-yellow-400/20">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center text-yellow-400 hover:text-yellow-300"
-                >
-                  View Project <ExternalLink size={16} className="ml-1" />
-                </a>
+              <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold text-[#FFD700] mb-2">{project.title}</h3>
+              <p className="text-gray-300 text-center text-sm mb-4">{project.description}</p>
+              <div className="flex flex-wrap gap-2 justify-center mb-4">
+                {project.tags.map(tag => (
+                  <span key={tag} className="px-3 py-1 bg-yellow-900/30 text-yellow-400 rounded-full text-xs border border-yellow-400/20">
+                    {tag}
+                  </span>
+                ))}
               </div>
-
-              {/* Hover Description Overlay */}
-              <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                <p className="text-gray-200 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-yellow-400 hover:text-yellow-300 flex items-center"
-                >
-                  View on GitHub <ExternalLink size={16} className="ml-1" />
-                </a>
-              </div>
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-yellow-400 hover:text-yellow-300 flex items-center"
+              >
+                View Project <ExternalLink size={16} className="ml-1" />
+              </a>
             </div>
           ))}
         </div>

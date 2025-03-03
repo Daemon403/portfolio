@@ -25,26 +25,26 @@ const Education = () => {
   ];
 
   const achievements = [
-    {
-      title: 'Dean\'s List',
-      year: '2021-2022',
-      description: 'Recognized for academic excellence for 4 consecutive semesters'
-    },
-    {
-      title: 'Hackathon Winner',
-      year: '2022',
-      description: 'First place at Ashesi D-Lab Hackathon for developing an AI-powered education accessibility tool'
-    },
+    // {
+    //   title: 'Dean\'s List',
+    //   year: '2021-2022',
+    //   description: 'Recognized for academic excellence for 4 consecutive semesters'
+    // },
+    // {
+    //   title: 'Hackathon Winner',
+    //   year: '2022',
+    //   description: 'First place at Ashesi D-Lab Hackathon for developing an AI-powered education accessibility tool'
+    // },
     {
       title: 'Mastercard Foundation Scholarship',
       year: '2021-2025',
       description: 'Full-tuition scholarship awarded based on academic achievement'
-    },
-    {
-      title: 'Best Student Project',
-      year: '2022',
-      description: 'Awarded for the development of an innovative smart home energy management system'
     }
+    // {
+    //   title: 'Best Student Project',
+    //   year: '2022',
+    //   description: 'Awarded for the development of an innovative smart home energy management system'
+    // }
   ];
 
   return (
