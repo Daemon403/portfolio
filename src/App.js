@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Footer from './components/Footer'; 
 import Education from './components/Education';
+import Interests from './components/Interests';
 
 export default function App() {
   return (
