@@ -58,7 +58,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-1">Location</h4>
-                <p className="text-gray-400">San Francisco, California</p>
+                <p className="text-gray-400">Accra, Ghana</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -68,7 +68,7 @@ export default function Contact() {
               <div>
                 <h4 className="text-lg font-semibold text-white mb-1">Email</h4>
                 <a href="mailto:nicholasmutsaka@gmail.com" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
-                  contact@example.com
+                nicholasmutsaka@gmail.com
                 </a>
               </div>
             </div>
