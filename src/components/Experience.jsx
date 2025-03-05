@@ -1,4 +1,6 @@
 import React from 'react';
+import { Building } from "lucide-react";
+import SectionTitle from './SectionTitle';
 
 const Experience = () => {
   const experiences = [
@@ -41,19 +43,25 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-[#060312] text-gray-400 transition-colors duration-300">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-yellow-400 mb-4">Work Experience</h2>
-          <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
+    <section 
+      id="experience" 
+      className="w-full bg-[#060312] text-gray-400 flex justify-center items-center py-16 relative"
+    >
+      <div className="max-w-[90%] w-full flex flex-col justify-center items-center">
+        
+        {/* Title Section */}   
+        <div className="w-full max-w-[900px] mb-8">
+          <SectionTitle icon={<Building />} title="Work Experience" />
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        {/* Experience Section */}
+        <div className="w-full max-w-[900px] relative">
           <div className="relative border-l-2 border-yellow-400 pl-8 ml-4">
             {experiences.map((exp, index) => (
               <div key={index} className="mb-12 relative">
-                <div className="absolute -left-12 mt-1.5 w-6 h-6 rounded-full bg-yellow-400 border-4 border-[#060312]"></div>
-                <div className="bg-[#0d061f] rounded-lg shadow-md p-6 border border-yellow-400 transition-colors duration-300">
+                <div className="absolute -left-12 mt-1.5 w-6 h-6 rounded-full bg-yellow-400 border-4 border-[#060312] z-10"></div>
+
+                <div className="bg-gray-800 p-6 dark:bg-gray-700 rounded-lg shadow-md border border-yellow-400 transition-colors duration-300 z-10 relative">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4">
                     <h3 className="text-xl font-semibold text-yellow-400">{exp.title}</h3>
                     <span className="text-yellow-300 font-medium">{exp.period}</span>
@@ -79,6 +87,7 @@ const Experience = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
