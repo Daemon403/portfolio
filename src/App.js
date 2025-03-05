@@ -15,7 +15,6 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <GithubOverview />
       <Home />
       <About />
       <Skills />
@@ -23,6 +22,7 @@ export default function App() {
       <Experience />
       <Education />
       <Interests />
+      <GithubOverview />
       <Contact />
       <Footer />  
     </div>
