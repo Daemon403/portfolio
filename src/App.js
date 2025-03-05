@@ -1,6 +1,7 @@
 // import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import GithubCalenderSection from './components/GithubCalenderSection';
 import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
@@ -16,6 +17,7 @@ export default function App() {
     <div>
       <Navbar />
       <Home />
+      <GithubCalenderSection username={"daemon403"}/>
       <About />
       <Skills />
       <Projects />
