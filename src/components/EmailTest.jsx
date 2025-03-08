@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
 
-function App() {
+function SendMail() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -144,4 +144,4 @@ function App() {
   );
 }
 
-export default App;
+export default SendMail;

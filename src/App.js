@@ -11,6 +11,7 @@ import Education from './components/Education';
 import Interests from './components/Interests';
 import Experience from './components/Experience';
 import GithubOverview from './components/GithubOverview';
+import SendMail from './components/EmailTest';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <Interests />
       <GithubOverview />
       <Contact />
+      <SendMail />
       <Footer />  
     </div>
 
