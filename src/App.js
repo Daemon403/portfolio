@@ -28,6 +28,7 @@ export default function App() {
       <GithubOverview />
       <Contact />
       <SendMail />
+      <SocialLinks />
       <Footer />  
     </div>
 
