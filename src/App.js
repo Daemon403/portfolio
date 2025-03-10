@@ -12,7 +12,7 @@ import Interests from './components/Interests';
 import Experience from './components/Experience';
 import GithubOverview from './components/GithubOverview';
 import SendMail from './components/EmailTest';
-
+import  SocialLinks from './components/Socials';
 export default function App() {
   return (
     <div>
