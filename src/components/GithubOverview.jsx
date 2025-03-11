@@ -92,7 +92,7 @@ const GithubOverview = () => {
           <StatCard icon={GitPullRequest} value={stats.pullRequests} label="Pull Requests" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 mb-16">
           {/* Recent Activity */}
           <ActivityCard title="Recent Activity" activities={recentActivity} />
 
