@@ -78,7 +78,7 @@ const GithubOverview = () => {
 
   return (
     <section id="github" className="py-20 bg-[#060312] text-gray-400">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-95%] w-full flex flex-col justify-center items-center">
         {/* Title Section */}
         <div className="w-full max-w-[900px] mb-8">
         <SectionTitle icon={<Github />} title="GitHub" />
