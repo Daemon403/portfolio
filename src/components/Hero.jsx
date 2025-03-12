@@ -1,6 +1,35 @@
-<template>
-    <div class="hero">
-        <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
-    </div>
-</template>
+import React from 'react';
+import { User, Globe, Award } from 'lucide-react';
+import SectionTitle from './SectionTitle';
+
+export default function About() {
+  return (
+    <section className='bg-[#060312] text-gray-400 w-full h-screen flex flex-col justify-center items-center'>
+      <div className="max-w-[900px] w-full flex flex-col justify-center mb-8">
+      
+      <SectionTitle icon={<User />} title="About Me" />
+      </div>
+      <div className="max-w-[900px] w-full flex flex-col grid md:grid-cols-2 gap-8">
+        <div className="bg-gray-800 rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow border border-gray-700">
+          <h3 className="text-xl font-semibold mb-4 flex items-center">
+            <Globe className="mr-2 text-yellow-400" /> Background
+          </h3>
+          <p className="text-gray-300 leading-relaxed">
+            I'm a passionate full-stack developer with 5 years of experience building web applications.
+            I specialize in React, Node.js, and modern web technologies.
+          </p>
+        </div>
+        <div className="bg-gray-800 rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow border border-gray-700">
+          <h3 className="text-xl font-semibold mb-4 flex items-center">
+            <Award className="mr-2 text-yellow-400" /> Achievements
+          </h3>
+          <ul className="text-gray-300 space-y-2">
+            <li>• Led development of 3 major enterprise applications</li>
+            <li>• Open source contributor to popular React libraries</li>
+            <li>• Speaker at tech conferences</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
